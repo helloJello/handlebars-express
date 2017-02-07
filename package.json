@@ -1,0 +1,13 @@
+{
+  "name": "express-handlebars-intro",
+  "version": "0.0.1",
+  "private": true,
+  "scripts": {
+    "start": "node ./bin/www"
+  },
+  "dependencies": {
+    "express": "~4.2.0",
+    "debug": "~0.7.4",
+    "hbs": "~2.7.0"
+  }
+}

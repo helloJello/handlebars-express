@@ -1,0 +1,34 @@
+
+regular body
+
+<hr/>
+
+{{> partial}}
+
+{{> partial1}}
+{{> partial2}}
+{{> partial3}}
+{{> partial4}}
+{{> partial5}}
+
+
+<script type="text/x-handlebars-template" id="items-template">
+{{#each downloads}}
+<div class="download-item">
+    <h3>{{this.pagetitle}}</h3>
+    <p>{{this.description}}</p>
+</div>
+{{/each}}
+</script>
+
+{{!--<script>
+    console.log(title);
+</script>--}}
+
+{{title}}
+<script>
+var source = $("#items-template").html();
+var template = Handlebars.compile( $.trim(source) );
+var html = template({{title}});
+</script>
+
